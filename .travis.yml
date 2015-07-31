@@ -9,13 +9,10 @@ compiler:
 addons:
   apt:
     sources:
-    - ubuntu-sdk-team
-
-addons:
-  apt:
+      - ubuntu-sdk-team
     packages:
-    - cppcheck
-    - qtdeclarative5-dev
+      - cppcheck
+      - qtdeclarative5-dev
 
 before_script:
   - cppcheck --error-exitcode=1 --quiet .
