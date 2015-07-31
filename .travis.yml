@@ -6,10 +6,10 @@ compiler:
   - clang
   - gcc
 
-#addons:
-#  apt:
-#    sources:
-#    - ubuntu-sdk-team
+addons:
+  apt:
+    sources:
+    - ubuntu-sdk-team
 
 addons:
   apt:
