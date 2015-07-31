@@ -14,8 +14,8 @@ addons:
 addons:
   apt:
     packages:
-    - cppcheck
     - qt5-qmake
+    - cppcheck
     - qtbase5-dev
     - libqt5xmlpatterns5-dev
 
