@@ -4,12 +4,18 @@ compiler:
   - clang
   - gcc
 
-before_install:
-  - sudo add-apt-repository --yes ppa:ubuntu-sdk-team/ppa
-  - sudo apt-get update -qq
+#addons:
+#  apt:
+#    sources:
+#    - ubuntu-sdk-team
 
-install:
-  - sudo apt-get install -qq cppcheck qt5-qmake qtbase5-dev libqt5xmlpatterns5-dev
+addons:
+  apt:
+    packages:
+    - cppcheck
+    - qt5-qmake
+    - qtbase5-dev
+    - libqt5xmlpatterns5-dev
 
 before_script:
   - cppcheck --error-exitcode=1 --quiet .
